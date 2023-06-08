@@ -1,0 +1,21 @@
+Opgave 4: Teori - HTTP
+a. HTTP (HyperText Transfer Protocol) er et stateløst protokol, som bruges til at sende data (HTML filer, billedfiler, query resultater, etc.) på World Wide Web.
+b. HTTP status koder er trecifrede numre, der giver information om status på HTTP anmodningen. For eksempel, 200 betyder "OK", 404 betyder "Not Found", og 500 betyder "Internal Server Error".
+c. REST bruger HTTP til at implementere CRUD operationer: GET til læsning, POST til oprettelse, PUT til opdatering, og DELETE til sletning. Adressering af resurser sker gennem URLs.
+
+Opgave 5 Test Typer Teori
+**Unit Test af Model klasser:** 
+Unit tests fokuserer på individuelle dele af softwaren, normalt på funktion- eller metodeniveau. I konteksten af modelklasser tester disse enhedstests, om de forskellige metoder og egenskaber i en modelklasse fungerer som forventet. For eksempel, i din `WoodPellet` modelklasse, ville du lave unit tests for at sikre, at egenskaberne (Brand, Price, Quality) overholder deres constraints, og at metoder som `ToString()` returnerer det forventede resultat.
+Disse tests hjælper med at opdage logiske fejl, såsom forkert inputvalidering eller forkert returneret data.
+
+**Unit Test af Manager klasser (i en Rest service):**
+Dette er også unit tests, men de er mere fokuseret på funktionaliteten af din serviceklasser. Disse klasser styrer ofte forretningslogikken og håndterer interaktionen mellem databasen og modelklasserne.
+Her tester vi, om metoder som `GetAll()`, `GetById()`, `Add()`, `Update()`, osv. opfører sig som forventet. Dette hjælper med at opdage fejl, såsom forkert datahåndtering, fejl i databaseopkald, og fejl i implementeringen af forretningsregler.
+
+**Postman Test af REST API:**
+Postman tests er integrations- eller systemtests, der tester funktionaliteten af dit REST API som en helhed. Disse tests anvender HTTP-kald til at interagere med API'et og tester, om det returnerer de forventede svar og statuskoder baseret på de forespørgsler, det modtager.
+Postman tests hjælper med at opdage fejl, såsom forkerte HTTP-statuskoder, forkert data returneret i API-responses, og fejl i API'ets endpoints.
+
+**UI Test:**
+UI-tests, eller User Interface tests, er end-to-end tests, der simulerer brugerinteraktioner med applikationens brugergrænseflade. Disse tests kan være manuelle (udført af mennesker) eller automatiserede (udført af software som Selenium).
+UI-tests hjælper med at opdage fejl, såsom problemer med layout, navigationsproblemer, fejl i formularer og inputs, og fejl, der kun opstår, når forskellige dele af applikationen interagerer med hinanden.
