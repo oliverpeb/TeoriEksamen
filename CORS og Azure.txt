@@ -1,0 +1,13 @@
+a. Når du offentliggør dit REST API til Azure, er det i princippet tilgængeligt over hele verden via internettet. Her er nogle af de fordele, der er ved at køre dit REST API i Azure i forhold til at køre det lokalt:
+
+   - Skalerbarhed: Med Azure kan du let skalere din applikation op og ned for at imødekomme ændringer i efterspørgslen.
+   - Tilgængelighed: Når dit API er hostet på Azure, er det tilgængeligt fra hvor som helst med internetforbindelse. Hvis det kun kører lokalt, er det kun tilgængeligt på det lokale netværk.
+   - Sikkerhed: Azure tilbyder en række sikkerhedstjenester og -funktioner for at beskytte dine applikationer og data.
+   - Overvågning: Med Azure har du adgang til detaljeret overvågning og logføring, som kan hjælpe dig med at diagnosticere og løse problemer.
+   - Vedligeholdelse: Microsoft tager sig af servervedligeholdelse og opdateringer, så du kan fokusere på dit API og din applikation.
+
+b. CORS (Cross-Origin Resource Sharing) er et sikkerhedskoncept i webudvikling, der tillader eller nægter webanmodninger fra forskellige oprindelser (origins). CORS er nødvendigt i moderne webapplikationer, hvor du for eksempel kan have et frontend kører på en domæne (www.example.com) og dit API kører på en anden domæne (api.example.com).
+
+I din applikation er den del, der er afhængig af CORS, sandsynligvis det klient-side JavaScript (eller andet frontend-framework), der gør anmodninger til dit REST API. Uden CORS ville browserens same-origin politik forhindre disse anmodninger i at blive lavet på tværs af forskellige oprindelser.
+
+At implementere CORS i dit REST API giver dig kontrol over, hvilke oprindelser, metoder og headers du vil tillade i dine API-anmodninger, hvilket hjælper med at beskytte dine API-endpoints.
