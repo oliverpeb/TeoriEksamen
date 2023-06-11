@@ -1,0 +1,26 @@
+Actionresult: 
+ActionResult<T> allows for flexible method return types, which can either be a specific type like Plant in this case or an HTTP response message. It's handy when you want to return different types of responses from the same action method in a controller, especially in the context of a RESTful API.
+
+Static:
+static members cannot access non-static fields or methods because they exist independently of any object of the class. Non-static members, however, can access static members because static members are shared among all objects of that class.
+
+Void:
+So, you would use void in C# when you're creating a method that performs an action but doesn't need to return a result.
+
+
+Repository: 
+The Repository is a design pattern that mediates between the domain (Model) and data mapping layers of your application. It provides a simple, clean interface to the underlying data storage (often a database). This means that your application doesn't have to know the specifics of how data is stored - it just uses the Repository to add, update, delete, or retrieve Model objects. This keeps the code clean, and makes it easier to maintain or change the data storage method in the future.
+
+Model:
+The Model classes are essentially the 'M' in the MVC (Model-View-Controller) pattern. They represent the data and the business logic of your application. They can be simple data structures, or they can include methods, logic, and behaviors related to the data. In a REST API, Models often correspond to the structure of data in your database, and can be used to serialize and deserialize the data going to and coming from the API endpoints.
+
+Controller:
+The Controller is the 'C' in MVC and is essentially the traffic cop of the application. In a REST API, each method in a Controller corresponds to an endpoint. When an HTTP request arrives at your API, the routing mechanism determines which Controller and method to invoke based on the URL and HTTP verb (GET, POST, PUT, DELETE, etc.). The Controller then interacts with the Model via the Repository, performs any necessary logic or computation, and returns an appropriate HTTP response. The response typically includes data serialized from the Model (for GET requests, for example), but might also be just a status code (for PUT, POST, or DELETE).
+
+In summary, the Model represents the data, the Repository handles data storage, and the Controller manages requests and responses. This separation of concerns results in a more maintainable, scalable, and testable application.
+
+
+
+
+
+
