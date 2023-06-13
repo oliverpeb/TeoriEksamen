@@ -1,0 +1,7 @@
+CORS står for Cross-Origin Resource Sharing. Det er en sikkerhedsfunktion, der hjælper med at styre, hvordan webapplikationer kommunikerer med hinanden. CORS bestemmer, hvilke webressourcer en webapplikation (normalt en webside) kan få adgang til fra en anden domæne end dens egen.
+
+Standardindstillingen for mange webapplikationer og browsere er at forhindre dette "cross-domain" samspil af sikkerhedshensyn. Men der er mange legitime tilfælde, hvor en applikation vil have behov for at hente data fra en anden domæne - for eksempel, hvis en klientapplikation skal hente data fra en separat API-server. CORS hjælper med at gøre dette på en sikker måde ved at tillade servere at specificere hvilke domæner, metoder (GET, POST, osv.) og headers der kan interagere med den.
+
+Swagger, på den anden side, er en samling af open-source værktøjer, der hjælper med at designe, bygge, dokumentere og bruge RESTful web services. Swagger er meget populært, fordi det gør det nemt for udviklere at forstå og interagere med en API-service, uden at skulle dykke ned i kildekoden eller forstå alle detaljer på forhånd.
+
+Swagger UI er en af de mest populære komponenter i Swagger-værktøjssættet. Det genererer en interaktiv dokumentationsside for en API baseret på en Swagger-definitionsfil, som er skrevet i JSON eller YAML. Denne side gør det muligt for udviklere at se, hvad API'en gør, hvilke endpoints den tilbyder, og endda udføre testopkald til API'en direkte fra browseren.
